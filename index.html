@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,33 +16,7 @@
 <body>
 <div class="layout">
 
-  <aside class="sidebar">
-    <img class="sidebar-photo" src="images/YutingMou.jpg" alt="Yuting Mou">
-    <h1 class="sidebar-name">Dr. Yuting MOU<br><span class="zh">牟玉亭</span></h1>
-    <div class="sidebar-role">
-      Assistant Professor<br>
-      <a href="https://ee.seu.edu.cn/" target="_blank" rel="noopener">School of Electrical Engineering</a><br>
-      <a href="https://www.seu.edu.cn/english/main.htm" target="_blank" rel="noopener">Southeast University</a>
-    </div>
-    <div class="sidebar-contact">
-      yutingmou@seu.edu.cn<br>
-    </div>
-    <div class="sidebar-links">
-      <a href="https://scholar.google.co.in/citations?user=F0B1R-oAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://www.researchgate.net/profile/Yuting-Mou-mouyuting" target="_blank" rel="noopener">ResearchGate</a>
-    </div>
-
-    <nav class="sidebar-nav">
-      <div class="menu-label">Menu</div>
-      <ul style="list-style:none;padding:0;margin:0;">
-        <li><a href="index.html" class="current">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="students-teaching.html">Students &amp; Teaching</a></li>
-        <li><a href="projects-awards.html">Projects &amp; Awards</a></li>
-        <li><a href="pdfs/CV_YutingMOU.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
-      </ul>
-    </nav>
-  </aside>
+  {% include sidebar.html %}
 
   <main class="content">
     <h1 class="page-title">About</h1>

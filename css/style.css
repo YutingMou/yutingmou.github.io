@@ -132,6 +132,11 @@ nav.sidebar-nav {
   margin-bottom: 10px;
   font-weight: 600;
 }
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .sidebar-nav a {
   display: block;
   padding: 7px 0;
