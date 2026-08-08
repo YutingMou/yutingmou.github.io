@@ -1,4 +1,14 @@
-<!-- Edit this file to update the sidebar on every page. -->
+<!-- Edit this file to update the profile or top navigation on every page. -->
+<nav class="top-nav" aria-label="Main navigation">
+  <ul>
+    <li><a href="{{ '/index.html' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="current" aria-current="page"{% endif %}>Home</a></li>
+    <li><a href="{{ '/publications.html' | relative_url }}"{% if page.url == '/publications.html' %} class="current" aria-current="page"{% endif %}>Publications</a></li>
+    <li><a href="{{ '/students-teaching.html' | relative_url }}"{% if page.url == '/students-teaching.html' %} class="current" aria-current="page"{% endif %}>Students &amp; Teaching</a></li>
+    <li><a href="{{ '/projects-awards.html' | relative_url }}"{% if page.url == '/projects-awards.html' %} class="current" aria-current="page"{% endif %}>Projects &amp; Awards</a></li>
+    <li><a href="{{ '/pdfs/CV_YutingMOU.pdf' | relative_url }}" target="_blank" rel="noopener">CV (PDF)</a></li>
+  </ul>
+</nav>
+
 <aside class="sidebar">
   <img class="sidebar-photo" src="{{ '/images/YutingMou.jpg' | relative_url }}" alt="Yuting Mou">
   <h1 class="sidebar-name">Dr. Yuting MOU<br><span class="zh">牟玉亭</span></h1>
@@ -14,15 +24,4 @@
     <a href="https://scholar.google.co.in/citations?user=F0B1R-oAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
     <a href="https://www.researchgate.net/profile/Yuting-Mou-mouyuting" target="_blank" rel="noopener">ResearchGate</a>
   </div>
-
-  <nav class="sidebar-nav" aria-label="Main navigation">
-    <div class="menu-label">Menu</div>
-    <ul>
-      <li><a href="{{ '/index.html' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="current" aria-current="page"{% endif %}>Home</a></li>
-      <li><a href="{{ '/publications.html' | relative_url }}"{% if page.url == '/publications.html' %} class="current" aria-current="page"{% endif %}>Publications</a></li>
-      <li><a href="{{ '/students-teaching.html' | relative_url }}"{% if page.url == '/students-teaching.html' %} class="current" aria-current="page"{% endif %}>Students &amp; Teaching</a></li>
-      <li><a href="{{ '/projects-awards.html' | relative_url }}"{% if page.url == '/projects-awards.html' %} class="current" aria-current="page"{% endif %}>Projects &amp; Awards</a></li>
-      <li><a href="{{ '/pdfs/CV_YutingMOU.pdf' | relative_url }}" target="_blank" rel="noopener">CV (PDF)</a></li>
-    </ul>
-  </nav>
 </aside>
