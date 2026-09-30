@@ -305,6 +305,10 @@ ul.plain-list li, ol.plain-list li { margin-bottom: 9px; }
   border-radius: var(--radius);
   background: var(--white);
 }
+.table-wrap-scroll {
+  max-height: 224px;
+  overflow-y: auto;
+}
 .student-table {
   width: 100%;
   min-width: 520px;
@@ -319,6 +323,9 @@ ul.plain-list li, ol.plain-list li { margin-bottom: 9px; }
   border-bottom: 1px solid var(--line);
 }
 .student-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   color: var(--accent);
   background: var(--bg-panel);
   font-size: .78rem;
